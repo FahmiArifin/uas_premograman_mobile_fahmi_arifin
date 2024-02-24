@@ -1,0 +1,30 @@
+/* tab4.page.scss */
+.rating-container {
+    display: flex;
+  }
+  
+  .rating-circle {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .black {
+    background-color: black;
+  }
+  .profile-picture {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 80px; /* Sesuaikan dengan ukuran yang diinginkan */
+    margin: 0 auto;
+  }
+  
+  ion-card-title {
+    font-size: 1.5em; /* Sesuaikan dengan ukuran yang diinginkan */
+  }
+  

@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pendataan Acara Komunitas</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card class="welcome-card bg-content">
+    <ion-card-header>
+      <ion-card-title color="primary">Pendataan Acara</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Silakan isi form di bawah untuk pendataan acara.</p>
+
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Nama Acara</ion-label>
+          <ion-input type="text" [(ngModel)]="nama_Acara"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Deskripsi Acara</ion-label>
+          <ion-textarea [(ngModel)]="deskripsi_Acara"></ion-textarea>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Lokasi Acara</ion-label>
+          <ion-input type="text" [(ngModel)]="lokasi_Acara"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Tanggal Mulai</ion-label>
+          <ion-input type="date" [(ngModel)]="tanggal_Mulai"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Tanggal Selesai</ion-label>
+          <ion-input type="date" [(ngModel)]="tanggal_Selesai"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Jenis Acara</ion-label>
+          <ion-select [(ngModel)]="jenis_Acara">
+            <ion-select-option value="resmi">Resmi</ion-select-option>
+            <ion-select-option value="tidak resmi">Tidak Resmi</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Kontak Person</ion-label>
+          <ion-input type="text" [(ngModel)]="kontak_Person"></ion-input>
+        </ion-item>
+
+
+
+        <ion-item>
+          <ion-label position="floating">Kategori Acara</ion-label>
+          <ion-input type="text" [(ngModel)]="kategori_Acara"></ion-input>
+        </ion-item>
+      </ion-list>
+
+      <div padding>
+        <ion-button expand="block" color="primary" size="medium" (click)="addregister()">
+          <ion-icon name="trending-up-outline"></ion-icon> Daftar
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

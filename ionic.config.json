@@ -1,0 +1,7 @@
+{
+  "name": "utsku",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

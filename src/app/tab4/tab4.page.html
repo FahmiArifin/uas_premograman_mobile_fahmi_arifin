@@ -1,0 +1,130 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tentang Saya</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col size="2">
+      <img src="assets/fahmi_arifin.jpg" alt="Foto Profil" class="profile-picture">
+    </ion-col>
+    <ion-col size="10">
+      <ion-card-title>FAHMI ARIFIN</ion-card-title>
+      <p>ADMINISTRASI</p>
+      <p>Seorang disabitas fisik yang lahir pada 28 desember 1997. memiliki rasa ingin tau yang kuat dan Selalu ingin belajar hal baru serta pantang menyerah jika ada kesulitan yang di hadapi. Ingin selalu berguna untuk orang sekitar.</p>
+    </ion-col>
+  </ion-row>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Pengalaman</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Januari 2019 - Maret 2019</ion-label>
+        <ion-note>Budi Perkasa Palembang</ion-note>
+      </ion-item>
+      <p>Penerima Manfaat yang dididik berbagai ilmu yang berguna di dunia kerja, dan pengasahan skill yang sesuai kemampuan.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Edukasi</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>2007-2019</ion-label>
+        <ion-note>SD, SMP, SMA - SLB N Dumai, Dumai, Indonesia</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>2021 - Sekarang</ion-label>
+        <ion-note>Srata 1 - Institut Teknologi Dan Bisnis Indonesia Medan, Indonesia</ion-note>
+      </ion-item>
+      <p>Prestasi Terbaik:</p>
+      <ul>
+        <li>Juara 3 Nasional Olimpiade Matematika Tingkat SMP</li>
+        <li>20 peserta terbaik dalam program beasiswa dan pembekalan soft skill & leadership tingkat mahasiswa se-Indonesia</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Kemampuan</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Ms Office:</ion-label>
+        <ion-col size="4" class="rating-container">
+          <div *ngFor="let circle of getRatingCircles(msOfficeRating)" class="rating-circle {{circle}}"></div>
+        </ion-col>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Berhitung:</ion-label>
+        <ion-col size="4" class="rating-container">
+          <div *ngFor="let circle of getRatingCircles(berhitungRating)" class="rating-circle {{circle}}"></div>
+        </ion-col>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Menulis:</ion-label>
+        <ion-col size="4" class="rating-container">
+          <div *ngFor="let circle of getRatingCircles(menulisRating)" class="rating-circle {{circle}}"></div>
+        </ion-col>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Leadership:</ion-label>
+        <ion-col size="4" class="rating-container">
+          <div *ngFor="let circle of getRatingCircles(leadershipRating)" class="rating-circle {{circle}}"></div>
+        </ion-col>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Sertifikasi</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li>Program Beasiswa dan Pembekalan Soft Skill & Leadership – PLN X Menembus Batas 2022</li>
+        <li>Pelatihan Keterampilan Komputer - BSPD Palembang, 2019</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Hobi</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li>Belajar berbagai hal di internet</li>
+        <li>Menulis pengalaman</li>
+        <li>Coding sederhana</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Kontak dan Media Sosial</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Untuk informasi lebih lanjut atau berkolaborasi, silakan hubungi saya melalui:</p>
+      <ul>
+        <li>Email: [Alamat Email]</li>
+        <li>LinkedIn: [Profil LinkedIn]</li>
+        <li>Twitter: [Akun Twitter]</li>
+        <!-- Tambahkan media sosial atau kontak lainnya sesuai kebutuhan -->
+      </ul>
+      <p>Terima kasih telah mengunjungi profil saya!</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

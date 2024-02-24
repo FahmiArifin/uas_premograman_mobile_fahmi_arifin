@@ -1,0 +1,65 @@
+ion-card {
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-card-title {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  ion-card-content {
+    line-height: 1.6em;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  ul, ol {
+    margin-bottom: 10px;
+  }
+  
+  h2, h3 {
+    color: #3880ff;
+  }
+  
+  img.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .rating-container {
+    display: flex;
+  }
+  
+  .rating-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .rating-circle.filled {
+    background-color: #3880ff;
+  }
+  
+  .rating-circle.empty {
+    background-color: #ccc;
+  }
+  
+  ion-row {
+    align-items: center;
+  }
+  
+  ion-col {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Tambahkan gaya tambahan sesuai kebutuhan Anda */
+  
